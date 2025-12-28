@@ -4,36 +4,57 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="stylesheet" href="./src/styles/style.css" />
+		<link rel="stylesheet" href="src/styles/header.css" />
+		<link rel="stylesheet" href="src/styles/home.css" />
+		<link rel="stylesheet" href="src/styles/technologies.css" />
 		<title>portfolio-02</title>
 
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	</head>
 	<body id="home">
-		<header>
-			<div class="wrapper">
-				<h1 id="logo">Mateus Santos</h1>
-				<nav>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#technologies">Tecnologias</a></li>
-						<li><a href="#project">Projetos</a></li>
-						<li><a href="#academic">Formação</a></li>
-						<li><a href="#experience">Experiência</a></li>
-						<li><a href="#contact">Contato</a></li>
+		<!-- ######## HEADER ######## -->
+
+		<header id="header" class="header">
+			<div class="header__wrapper">
+				<h1 class="header__logo">Mateus Santos</h1>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a class="header__link header__link--active" href="#home">Home</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#technologies">Tecnologias</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#project">Projetos</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#academic">Formação</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#experience">Experiência</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#contact">Contato</a>
+						</li>
 					</ul>
-					<i class="fa-solid fa-sun"></i>
+					<i class="fa-solid fa-sun header__icon"></i>
 				</nav>
 			</div>
 		</header>
 
+		<!-- ######## MAIN ######## -->
+
 		<main>
-			<section class="home-section">
-				<div class="home-container">
-					<div class="home-description">
-						<h1>Hello, World!</h1>
-						<h2>Sou <span>Web Developer</span></h2>
-						<p>
+			<!-- HOME -->
+
+			<section id="home" class="home">
+				<div class="home__container">
+					<div class="home__content">
+						<h1 class="home__title">Hello, World!</h1>
+						<h2 class="home__subtitle">Sou <span class="home__highlight">Web Developer</span></h2>
+						<p class="home__description">
 							Olá, é um prazer tê-lo(a) por aqui. Meu nome é Mateus Santos e sou programador com foco em desenvolvimento
 							web. Além de ser apaixonado por aprender e entender tecnologias, também sou graduando de Sistemas de
 							Informação, na UESB - Campus Jequié, e residente em TIC36 no CEPEDI.
@@ -48,141 +69,170 @@
 							</a>
 						</div>
 					</div>
-					<img class="home-image" src="src/assets/imaga-profile.jpeg" alt="Mateus Santos" />
+					<img class="home__image" src="src/assets/imaga-profile.jpeg" alt="Mateus Santos" />
 				</div>
 
-				<div class="container-social-icons">
-					<i class="fa-brands fa-github"></i>
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-solid fa-envelope"></i>
+				<div class="home__icons">
+					<i class="fa-brands fa-github home__icon"></i>
+					<i class="fa-brands fa-linkedin home__icon"></i>
+					<i class="fa-solid fa-envelope home__icon"></i>
 				</div>
 			</section>
 
-			<section id="technologies" class="technologies-section">
+			<!-- TECHNOLOGIES SECTION -->
+
+			<section id="technologies" class="technologies">
 				<h3 class="section-title">Tecnologias</h3>
 
-				<div class="technologies-container">
-					<div class="technologies-description">
-						<h3>Focus <span>Web.</span></h3>
-						<p>
+				<div class="technologies__container">
+					<div class="technologies__description">
+						<h3 class="technologies__subtitle">Focus <span class="technologies__highlight">Web.</span></h3>
+						<p class="technologies__text">
 							Atualmente, as principais tecnologias que utilizo e tenho maior domínio são HTML, CSS, JavaScript , React
 							& Angular. Gosto muito da parte visual do desenvolvimento e de suas interações. Todavia, também tenho
 							conhecimentos em Java, PhP e C++ - durante o curso de informática no IFBA - Campus Jequié utilizei tais
 							tecnologias. Além disso, estou cursando Sistemas de Informação na UESB - Campus Jequié, onde também já
 							trabalhei com C e Java.
 						</p>
-						<p>
+						<p class="technologies__text">
 							No ano de 2024, realizei a 1ª fase da residência TIC36, onde cursei a trilha de Front-End (UI/UX + Angular
 							13+), acumalando um repertório significativo no desenvolvimento de interfaces agradáveis, intuitivas e
 							consistentes. Em 2025, realizei a 2ª fase, atuando como Designer UI/UX no desenvolvimento de um projeto
 							com em acessibilidade para uma das empresas parceiras do CEPEDI.
 						</p>
-						<p>
+						<p class="technologies__text">
 							Além disso, busco constantemente melhorar minhas habilidades para o desenvolvimento de aplicações web.
 						</p>
 					</div>
 
-					<div class="technologies-languages">
-						<div id="react" class="box-icon">
-							<i class="devicon-react-original"></i>
-							<span>React</span>
-							<i class="fa-solid fa-star star"></i>
-						</div>
-						<div id="angular" class="box-icon">
-							<i class="devicon-angularjs-plain"></i>
-							<span>Angular</span>
-							<i class="fa-solid fa-star star"></i>
-						</div>
-						<div id="typescript" class="box-icon">
-							<i class="devicon-typescript-plain"></i>
-							<span>TypeScript</span>
-							<i class="fa-solid fa-star star"></i>
-						</div>
-						<div id="html" class="box-icon">
-							<i class="devicon-html5-plain"></i>
-							<span>HTML</span>
-							<i class="fa-solid fa-star star"></i>
+					<div class="technologies__languages">
+						<div id="react" class="technologies__item">
+							<i class="devicon-react-original technologies__icon"></i>
+							<span class="technologies__label">React</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="css" class="box-icon">
-							<i class="devicon-css3-plain"></i>
-							<span>CSS</span>
-							<i class="fa-solid fa-star star"></i>
+						<div id="angular" class="technologies__item">
+							<i class="devicon-angularjs-plain technologies__icon"></i>
+							<span class="technologies__label">Angular</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="javascript" class="box-icon">
-							<i class="devicon-javascript-plain"></i>
-							<span>JavaScript</span>
-							<i class="fa-solid fa-star star"></i>
-						</div>
-						<div id="java" class="box-icon">
-							<i class="devicon-java-plain"></i>
-							<span>JAVA</span>
+						<div id="typescript" class="technologies__item">
+							<i class="devicon-typescript-plain technologies__icon"></i>
+							<span class="technologies__label">TypeScript</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="php" class="box-icon">
-							<i class="devicon-php-plain"></i>
-							<span>PHP</span>
+						<div id="html" class="technologies__item">
+							<i class="devicon-html5-plain technologies__icon"></i>
+							<span class="technologies__label">HTML</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="sass" class="box-icon">
-							<i class="devicon-sass-original"></i>
-							<span>Sass</span>
+						<div id="css" class="technologies__item">
+							<i class="devicon-css3-plain technologies__icon"></i>
+							<span class="technologies__label">CSS</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="cplus" class="box-icon">
-							<i class="devicon-cplusplus-plain"></i>
-							<span>C++</span>
+						<div id="javascript" class="technologies__item">
+							<i class="devicon-javascript-plain technologies__icon"></i>
+							<span class="technologies__label">JavaScript</span>
+							<i class="fa-solid fa-star technologies__star"></i>
 						</div>
 
-						<div id="c" class="box-icon">
-							<i class="devicon-c-plain"></i>
-							<span>C</span>
+						<div id="java" class="technologies__item">
+							<i class="devicon-java-plain technologies__icon"></i>
+							<span class="technologies__label">JAVA</span>
 						</div>
 
-						<div id="python" class="box-icon">
-							<i class="devicon-python-plain"></i>
-							<span>Python</span>
+						<div id="php" class="technologies__item">
+							<i class="devicon-php-plain technologies__icon"></i>
+							<span class="technologies__label">PHP</span>
+						</div>
+
+						<div id="sass" class="technologies__item">
+							<i class="devicon-sass-original technologies__icon"></i>
+							<span class="technologies__label">Sass</span>
+						</div>
+
+						<div id="cplus" class="technologies__item">
+							<i class="devicon-cplusplus-plain technologies__icon"></i>
+							<span class="technologies__label">C++</span>
+						</div>
+
+						<div id="c" class="technologies__item">
+							<i class="devicon-c-plain technologies__icon"></i>
+							<span class="technologies__label">C</span>
+						</div>
+
+						<div id="python" class="technologies__item">
+							<i class="devicon-python-plain technologies__icon"></i>
+							<span class="technologies__label">Python</span>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="project-section">
+			<!-- PROJECT SECTION -->
+
+			<section class="project">
 				<h2 class="section-title">Projetos</h2>
 
-				<div class="project-container"></div>
+				<div class="project__container"></div>
 			</section>
 
-			<section class="academic-section">
+			<!-- ACADEMIC SECTION -->
+
+			<section id="academic" class="academic">
 				<h2 class="section-title">Formação</h2>
-				<div class="academic-container"></div>
+
+				<div class="academic__container"></div>
 			</section>
+
+			<!-- EXPERIENCE SECTION -->
 
 			<section class="experience-section">
 				<h2 class="section-title">Experiência</h2>
-				<div class="experience-container"></div>
+				<div class="experience__container"></div>
 			</section>
 		</main>
+
+		<!-- CONTACT SECTION -->
+
+		<section class="contact-section">
+			<h2 class="section-title">Contato</h2>
+			<div class="contact__container"></div>
+		</section>
+
+		<!-- ######## FOOTER ######## -->
 
 		<footer>Footer</footer>
 
 		<!-- ############ TEMPLATES ############ -->
 
 		<!-- PROJECT CARD -->
+
 		<template id="project-card-template">
 			<article class="card">
 				<header class="header">
-					<h3 class="name">Project</h3>
+					<h3 class="name"></h3>
 				</header>
 
-				<div>
-					<p class="description">
-						Gerenciador de estoque moderno, responsivo e intuitivo. A aplicação permite a listagem, criação, edição e
-						exclusão de itens, bem como de categoria de itens. Além disso, é possível mudar entre tema escuro ou claro,
-						filtrar itens por categoria e exibir itens recentes e que estão com baixa quantidade no estoque. Os dados
-						estãos sincronizados e persistentes no localStorage
-					</p>
+				<div class="body">
+					<div class="content">
+						<p class="description"></p>
+
+						<div class="info">
+							<img class="image" src="src/assets/images/projects/it-solutions.jpeg" alt="" />
+							<div class="languages">
+								<i class="devicon-react-original project__icon"></i>
+								<i class="devicon-react-original project__icon"></i>
+								<i class="devicon-react-original project__icon"></i>
+							</div>
+						</div>
+					</div>
 
 					<div class="container-links">
 						<a href="" class="academic-link">
@@ -201,14 +251,22 @@
 		<!-- ACADEMIC CARD -->
 
 		<template id="academic-card-template">
-			<article class="card">
-				<header class="header">
-					<h2 class="company"></h2>
-					<span class="period"></span>
-				</header>
-				<h4 class="course"></h4>
-				<p class="description"></p>
-			</article>
+			<div class="group right">
+				<article class="card">
+					<header class="header">
+						<h2 class="instution">IFBA</h2>
+						<span class="period">2019 - 2024</span>
+					</header>
+					<h4 class="course">Técnico em Informática</h4>
+					<p class="description">
+						Cursei Técnico em Informática no IFBA, onde tive meu primeiro contato com a programação. Aqui, dei início a
+						minha carreira como desenvolvedor Frontend, aplicando HTML e CSS. Além disso, também estudei C++, Java e
+						PhP.
+					</p>
+				</article>
+
+				<img class="logo" src="./src/assets/images/academic/ilogo.jpeg" alt="" />
+			</div>
 		</template>
 
 		<!-- EXPERIENCE CARD -->

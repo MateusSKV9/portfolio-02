@@ -1,7 +1,7 @@
 import { createAcademicCard } from "./AcademicCard";
 
 export function renderAcademics(academics) {
-	const container = document.querySelector(".academic-timeline");
+	const container = document.querySelector(".academic__container");
 
 	if (!container) return;
 	const fragment = document.createDocumentFragment();

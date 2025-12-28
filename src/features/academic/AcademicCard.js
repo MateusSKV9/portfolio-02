@@ -1,14 +1,35 @@
 import styles from "./Academic.module.css";
 
+import { applyStyles } from "./../../utils/applyStyles";
+
 export function createAcademicCard(academic) {
 	const template = document.querySelector("#academic-card-template");
 
 	const card = template.content.cloneNode(true);
 
-	card.querySelector(".company").textContent = academic.company;
+	const position = academic.position === "right" ? "right" : "left";
+
+	applyStyles(
+		card,
+		{
+			".group": `group ${position}`,
+			".logo": "logo",
+			".card": "card",
+			".header": "header",
+			".instution": "instution",
+			".period": "period",
+			".course": "course",
+			".description": "description",
+			".logo": "logo",
+		},
+		styles
+	);
+
+	card.querySelector(".instution").textContent = academic.instution;
 	card.querySelector(".period").textContent = academic.period;
 	card.querySelector(".course").textContent = academic.course;
 	card.querySelector(".description").textContent = academic.description;
+	card.querySelector(".logo").setAttribute("src", academic.image);
 
 	return card;
 }

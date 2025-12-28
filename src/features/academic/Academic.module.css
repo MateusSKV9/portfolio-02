@@ -1,5 +1,94 @@
+.group {
+	position: relative;
+	display: flex;
+	gap: 50px;
+	height: inherit;
+}
+
+.logo {
+	border: 2px solid var(--secondary);
+	border-radius: 10px;
+	height: 100px;
+	position: absolute;
+}
+
 .card {
-	.header {
-    
+	position: absolute;
+	width: 100%;
+	max-width: 480px;
+	padding: 16px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border: 1px solid var(--primary);
+	box-shadow: -8px 8px 0px var(--secondary);
+	border-radius: 10px;
+	background-color: var(--whitesmoke);
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: var(--white);
+		border: 6px solid var(--primary);
 	}
+}
+
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.period {
+	font-style: italic;
+	font-weight: 500;
+}
+
+/* #### LEFT #### */
+
+.left .card {
+	text-align: right;
+	right: calc(50% + 30px);
+
+	&::before {
+		right: -45px;
+	}
+}
+.left .logo {
+	left: calc(50% + 30px);
+	box-shadow: -4px 4px 0px var(--secondary);
+}
+.left .header {
+	.instution {
+		order: 2;
+	}
+}
+.left .period {
+	order: 1;
+}
+
+/* #### RIGHT #### */
+
+.right .card {
+	text-align: left;
+	left: calc(50% + 30px);
+
+	&::before {
+		left: -45px;
+	}
+}
+.right .logo {
+	right: calc(50% + 30px);
+	box-shadow: 4px 4px 0px var(--secondary);
+}
+.right .header {
+	.instution {
+		order: 1;
+	}
+}
+.right .period {
+	order: 2;
 }
