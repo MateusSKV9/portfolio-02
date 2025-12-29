@@ -177,7 +177,7 @@
 
 			<!-- PROJECT SECTION -->
 
-			<section class="project">
+			<section id="project" class="project">
 				<h2 class="section-title">Projetos</h2>
 
 				<div class="project__container"></div>
@@ -193,22 +193,18 @@
 
 			<!-- EXPERIENCE SECTION -->
 
-			<section class="experience-section">
+			<section id="experience" class="experience">
 				<h2 class="section-title">Experiência</h2>
+
 				<div class="experience__container"></div>
 			</section>
 		</main>
 
-		<!-- CONTACT SECTION -->
-
-		<section class="contact-section">
-			<h2 class="section-title">Contato</h2>
-			<div class="contact__container"></div>
-		</section>
-
 		<!-- ######## FOOTER ######## -->
 
-		<footer>Footer</footer>
+		<footer id="contact">
+			<h2 class="section-title">Contato</h2>
+		</footer>
 
 		<!-- ############ TEMPLATES ############ -->
 
@@ -274,26 +270,30 @@
 		<template id="experience-card-template">
 			<article class="card">
 				<header class="header">
-					<div>
-						<img class="image-company" src="" alt="" />
-						<div>
+					<div class="wrapper">
+						<img class="company-image" src="" alt="" />
+						<div class="compony-info">
 							<h3 class="company"></h3>
 							<h4 class="role"></h4>
 							<span class="description"></span>
 						</div>
 					</div>
 
-					<span class="period"></span>
+					<div class="container-period">
+						<span class="period"></span>
+						<span class="duration"></span>
+					</div>
 				</header>
 
 				<div class="responsabilities-container">
-					<h4 class="responsabilities"></h4>
+					<h4 class="responsabilities-title">Responsabilidades</h4>
 					<ul class="responsabilities-list"></ul>
 				</div>
 
-				<p class="description"></p>
-
-				<ul class="technologies"></ul>
+				<div class="technologies-container">
+					<span>Tecnologias:</span>
+					<ul class="technologies-list"></ul>
+				</div>
 			</article>
 		</template>
 

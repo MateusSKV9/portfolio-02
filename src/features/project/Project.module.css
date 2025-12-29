@@ -84,3 +84,17 @@
 		}
 	}
 }
+
+@keyframes pulse {
+	0%,
+	40%,
+	60%,
+	100% {
+		transform: scale(1);
+	}
+
+	20%,
+	80% {
+		transform: scale(1.05);
+	}
+}

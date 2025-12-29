@@ -1,16 +1,94 @@
 .card {
-	background: whitesmoke;
-	border-radius: 8px;
-	padding: 1rem;
+	max-width: 1000px;
+	width: 100%;
+	border-top: 1px solid var(--boxShadow);
+	border-right: 1px solid var(--boxShadow);
+	border-bottom: 1px solid var(--boxShadow);
+	border-left: 8px solid var(--primary);
+	border-radius: 30px 0px 30px 30px;
+	padding: 20px;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--whitesmoke);
+	box-shadow: 0px 3px 3px var(--boxShadow);
+}
 
-	.header {
-		display: flex;
-		justify-content: space-between;
-	}
+.responsabilities-list,
+.technologies-list {
+	list-style-position: inside;
+}
 
-	.technologies {
-		display: flex;
-		gap: 0.5rem;
-		margin-top: 0.75rem;
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-bottom: 16px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.company-image {
+	width: 110px;
+	border-radius: 50%;
+}
+
+.compony-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.container-period {
+	font-size: 0.95rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-style: italic;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.responsabilities-container {
+	display: flex;
+	gap: 12px;
+	flex-direction: column;
+}
+
+.responsabilities-list {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.1rem;
+	margin-left: 8px;
+	gap: 8px;
+}
+
+.technologies-container {
+	display: flex;
+	gap: 8px;
+}
+
+.responsabilities-title {
+	font-weight: bold;
+}
+
+.technologies-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 1.1rem;
+}
+
+.technologies-item {
+	&:not(&:last-of-type)::after {
+		content: ",";
 	}
 }

@@ -1,7 +1,7 @@
 import { createExperienceCard } from "./ExperienceCard.js";
 
 export function renderExperiences(experiences) {
-	const container = document.querySelector(".experience-container");
+	const container = document.querySelector(".experience__container");
 	if (!container) return;
 
 	const fragment = document.createDocumentFragment();
