@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-.dark {
-	--primary: #00f5d4;
-}
-
 :root {
 	--primary: #2474fd;
-	--secondary: #0d0c1d;
+	--background: #fff;
+	--text: #fff;
+
+	--boxShadow-highlight: black;
+
+	--toggle-boxShadow: rgba(0, 0, 0, 0.25);
+
+	--secondary: #1a1c22;
 
 	--white: #fff;
 	--yellow: #ffe100;
 	--whitesmoke: #fafafa;
 	--boxShadow: rgba(0, 0, 0, 0.25);
 
+	--black: #1a1c22;
+
+	--grade: rgba(0, 0, 0, 0.03);
+
 	--Inter: "Inter", Arial, Helvetica, sans-serif;
+}
+
+[data-theme="dark"] {
+	--text: #1a1c22;
+	--background: #1a1c22;
+	--secondary: #fff;
+	--toggle-boxShadow: rgba(255, 255, 255, 0.25);
+	--boxShadow-highlight: rgba(255, 255, 255, 0.25);
+	--grade: rgba(255, 255, 255, 0.03);
 }
 
 * {
@@ -28,8 +44,8 @@ html {
 	font-size: 16px;
 	scroll-behavior: smooth;
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+	background-image: linear-gradient(var(--grade) 1px, transparent 1px),
+		linear-gradient(90deg, var(--grade) 1px, transparent 1px);
 
 	background-size: 80px 80px;
 }
@@ -37,6 +53,10 @@ html {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+html {
+	background-color: var(--background);
 }
 
 body {
@@ -48,6 +68,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	gap: 140px;
 	font-family: var(--Inter);
 	position: relative;
 
@@ -57,19 +78,23 @@ body {
 }
 
 main {
-	padding: 0px 6px;
+	padding: 0px 8px;
 	margin-top: 80px;
 	display: flex;
 	flex-direction: column;
-	gap: 100px;
+	gap: 140px;
 
-	section:not(.home-section) {
+	section:not(#home) {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 50px;
 		scroll-margin-top: 80px;
+	}
+
+	#home {
+		scroll-margin-top: 120px;
 	}
 }
 
@@ -83,8 +108,12 @@ main {
 	padding: 12px 26px;
 	border-radius: 10px;
 	border: 1px solid var(--primary);
-	box-shadow: 0px 3px 1px var(--boxShadow);
+	box-shadow: 0px 3px 1px var(--toggle-boxShadow);
 	transition: all 0.15s ease;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	cursor: pointer;
 
 	&:hover {
 		transform: translateY(-2px);
@@ -138,17 +167,17 @@ main {
 	font-weight: 900;
 	width: max-content;
 	-webkit-text-stroke: 1px black;
+	z-index: 1;
 
 	&::before {
 		content: "";
 		position: absolute;
-		z-index: -1;
-		left: -6px;
 		bottom: 0px;
-
 		width: calc(100% + 8px);
 		height: 13px;
 		background-color: var(--primary);
+		left: -6px;
+		z-index: -1;
 	}
 }
 
@@ -159,7 +188,7 @@ main {
 }
 
 .academic {
-	height: 900px;
+	height: 950px;
 
 	.academic__container {
 		position: relative;
@@ -177,7 +206,7 @@ main {
 			width: 10px;
 			top: -50px;
 			left: 50%;
-			height: 900px;
+			height: 915px;
 			transform: translateX(-50%);
 		}
 	}
@@ -192,6 +221,6 @@ main {
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		gap: 32px;
+		gap: 48px;
 	}
 }

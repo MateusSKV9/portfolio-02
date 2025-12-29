@@ -8,16 +8,19 @@
 		<link rel="stylesheet" href="src/styles/header.css" />
 		<link rel="stylesheet" href="src/styles/home.css" />
 		<link rel="stylesheet" href="src/styles/technologies.css" />
+		<link rel="stylesheet" href="src/styles/contact.css" />
 		<title>portfolio-02</title>
 
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	</head>
-	<body id="home">
+	<body>
 		<!-- ######## HEADER ######## -->
 
 		<header id="header" class="header">
 			<div class="header__wrapper">
-				<h1 class="header__logo">Mateus Santos</h1>
+				<a href="#home">
+					<h1 class="header__logo">Mateus Santos</h1>
+				</a>
 				<nav class="header__nav">
 					<ul class="header__list">
 						<li class="header__item">
@@ -202,8 +205,52 @@
 
 		<!-- ######## FOOTER ######## -->
 
-		<footer id="contact">
+		<footer id="contact" class="contact">
 			<h2 class="section-title">Contato</h2>
+
+			<div class="contact__icons">
+				<a class="contact__link" href="">
+					<i class="fa-brands fa-github contact__icon"></i>
+					<span>MateusSKV9</span>
+				</a>
+				<a class="contact__link" href="">
+					<i class="fa-brands fa-linkedin contact__icon"></i>
+					<span>Mateus Santos</span>
+				</a>
+				<a class="contact__link" href="">
+					<i class="fa-solid fa-envelope contact__icon"></i>
+					<span>mateussilvanzg</span>
+				</a>
+			</div>
+
+			<form method="post" class="contact__form">
+				<div class="contact__wrapper">
+					<div class="contact__group">
+						<label class="contact__label" for="name">Nome</label>
+						<input class="contact__input" type="text" name="name" id="name" placeholder="Digite seu nome" />
+					</div>
+
+					<div class="contact__group">
+						<label class="contact__label" for="email">Email</label>
+						<input class="contact__input" type="email" name="email" id="email" placeholder="Digite seu email" />
+					</div>
+				</div>
+
+				<div class="contact__group">
+					<label class="contact__label" for="message">Mensagem</label>
+					<textarea class="contact__textarea" name="message" id="message" placeholder="Digite seu mensagem"></textarea>
+				</div>
+
+				<div class="container-link-button">
+					<input class="link-button contact__button--secondary" type="reset" value="Limpar" />
+					<div class="link-button contact__button--primary">
+						<input class="contact__input--primary" type="submit" value="Enviar" />
+						<i class="fa-solid fa-circle-check contact__icon--ckeck"></i>
+					</div>
+				</div>
+
+				<p class="contact__rights">© 2025 Mateus Santos</p>
+			</form>
 		</footer>
 
 		<!-- ############ TEMPLATES ############ -->
@@ -222,11 +269,8 @@
 
 						<div class="info">
 							<img class="image" src="src/assets/images/projects/it-solutions.jpeg" alt="" />
-							<div class="languages">
-								<i class="devicon-react-original project__icon"></i>
-								<i class="devicon-react-original project__icon"></i>
-								<i class="devicon-react-original project__icon"></i>
-							</div>
+
+							<ul class="technologies-list"></ul>
 						</div>
 					</div>
 
@@ -291,7 +335,7 @@
 				</div>
 
 				<div class="technologies-container">
-					<span>Tecnologias:</span>
+					<h4>Tecnologias:</h4>
 					<ul class="technologies-list"></ul>
 				</div>
 			</article>

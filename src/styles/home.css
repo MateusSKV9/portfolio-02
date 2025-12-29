@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 90vh;
+	margin-top: 30px;
 }
 
 .home__container {
@@ -32,7 +33,7 @@
 .home__highlight {
 	color: var(--primary);
 	font-family: "Arial Black", sans-serif;
-	-webkit-text-stroke: 1px rgb(255, 255, 255);
+	-webkit-text-stroke: 1px var(--white);
 	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -45,14 +46,14 @@
 .home__image {
 	border: 6px solid var(--primary);
 	border-radius: 50%;
-	width: 380px;
+	width: 370px;
 	animation: move 2.5s linear infinite;
-	box-shadow: 0px 3px 3px var(--boxShadow);
+	box-shadow: 0px 3px 3px var(--toggle-boxShadow);
 	margin-left: auto;
 }
 
 .home__icons {
-	margin-top: 100px;
+	margin-top: 80px;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -70,7 +71,7 @@
 	color: var(--secondary);
 
 	&:hover {
-		box-shadow: 1px 1px 2px 1px var(--boxShadow);
+		box-shadow: 1px 1px 2px 1px var(--toggle-boxShadow);
 		transform: translate(-2px, -2px);
 	}
 }

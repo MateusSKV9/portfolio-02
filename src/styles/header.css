@@ -1,6 +1,6 @@
 #header {
 	padding-top: 10px;
-	background-color: var(--white);
+	background-color: var(--background);
 	width: 100%;
 	max-width: 1200px;
 	position: fixed;
@@ -50,7 +50,7 @@
 		bottom: 0;
 		background-color: var(--white);
 		transition: all 0.2s ease;
-		height: 1px;
+		height: 2px;
 		width: 0;
 	}
 
