@@ -10,7 +10,8 @@ export const academics = [
 		description:
 			"Cursei Técnico em Informática no IFBA, onde tive meu primeiro contato com a programação. Aqui, dei início a minha carreira como desenvolvedor Frontend, aplicando HTML e CSS. Além disso, também estudei C++, Java e PhP. ",
 		image: ifbaImage,
-    position: "right"
+		status: null,
+		position: "right",
 	},
 	{
 		instution: "UESB",
@@ -19,7 +20,8 @@ export const academics = [
 		description:
 			"Entrei para faculdade UESB, onde pude aprofundar meus conhecimentos em lógica de programação, algoritmos e estrutura de Dados. Até então, já desenvolvi nas linguagens C, C++, Java, JavaScript, HTML e CSS.",
 		image: uesbImage,
-    position: "left"
+		status: "Cursando",
+		position: "left",
 	},
 	{
 		instution: "CEPEDI/Softex",
@@ -28,6 +30,7 @@ export const academics = [
 		description:
 			"Entrei para a residência tecnológica na trilha de Frontend, onde estudei e apliquei UI/UX, Angular, TypeScript, JavaScript, HTML e CSS. Além disso, participei no desenvolvimento de um SASS, o qual foi moldado pela minha equipe da residência. Implementei o Frontend em Angular.",
 		image: cepedimage,
-     position: "right"
+		status: null,
+		position: "right",
 	},
 ];

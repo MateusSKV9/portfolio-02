@@ -45,8 +45,7 @@
 	border-radius: 8px;
 	border: 2px solid var(--primary);
 	font-size: 1rem;
-  box-shadow: 0px 3px 1px var(--toggle-boxShadow);
-
+	box-shadow: 0px 3px 1px var(--toggle-boxShadow);
 
 	&::placeholder,
 	&::placeholder {
@@ -141,8 +140,7 @@
 	border: none;
 	font-size: 1.1rem;
 	transition: all 0.15s ease;
-  color: var(--primary);
-
+	color: var(--primary);
 }
 
 .contact__icon--ckeck {

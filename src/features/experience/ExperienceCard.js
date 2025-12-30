@@ -1,32 +1,29 @@
 import { applyStyles } from "../../utils/applyStyles";
 import styles from "./ExperienceCard.module.css";
 
+const stylesMap = {
+	".card": "card",
+	".header": "header",
+	".wrapper": "wrapper",
+	".company-image": "company-image",
+	".compony-info": "compony-info",
+	".company": "company",
+	".role": "role",
+	".description": "description",
+	".container-period": "container-period",
+	".period": "period",
+	".duration": "duration",
+	".responsabilities-container": "responsabilities-container",
+	".responsabilities-title": "responsabilities-title",
+	".responsabilities-list": "responsabilities-list",
+	".technologies-container": "technologies-container",
+	".technologies-list": "technologies-list",
+	".technologies-item": "technologies-item",
+};
+
 export function createExperienceCard(experience) {
 	const template = document.querySelector("#experience-card-template");
 	const card = template.content.cloneNode(true);
-
-	applyStyles(
-		card,
-		{
-			".card": "card",
-			".header": "header",
-			".wrapper": "wrapper",
-			".company-image": "company-image",
-			".compony-info": "compony-info",
-			".company": "company",
-			".role": "role",
-			".description": "description",
-			".container-period": "container-period",
-			".period": "period",
-			".duration": "duration",
-			".responsabilities-container": "responsabilities-container",
-			".responsabilities-title": "responsabilities-title",
-			".responsabilities-list": "responsabilities-list",
-			".technologies-container": "technologies-container",
-			".technologies-list": "technologies-list",
-		},
-		styles
-	);
 
 	card.querySelector(".company-image").setAttribute("src", experience.image);
 	card.querySelector(".company").textContent = experience.company;
@@ -51,6 +48,8 @@ export function createExperienceCard(experience) {
 		li.classList.add("technologies-item");
 		techList.appendChild(li);
 	});
+
+	applyStyles(card, stylesMap, styles);
 
 	return card;
 }

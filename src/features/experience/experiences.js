@@ -5,7 +5,7 @@ import imageCegesp from "./../../assets/images/experience/cegesp-logo.png";
 export const experiences = [
 	{
 		company: "UESB/CEGESP",
-		period: "Mar/2024 – Jul/2024",
+		period: "Abr/2025 – Dez/2025",
 		duration: "(6 meses)",
 		image: imageCegesp,
 		role: "Desenvolvedor Frontend",

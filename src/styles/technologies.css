@@ -26,7 +26,7 @@
 }
 
 .technologies__text {
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 	text-indent: 50px;
 	text-align: justify;
 	line-height: 26px;
@@ -74,6 +74,10 @@
 	font-size: 12px;
 	text-shadow: 1px 1px 0px black;
 	-webkit-text-stroke: 1px var(--black);
+}
+
+.project__strong--highlight {
+	color: var(--primary);
 }
 
 #react:hover {
@@ -146,7 +150,7 @@
 	box-shadow: 0px 3px 0px rgba(247, 223, 30, 0.2);
 }
 
-/* PROJECT ICON */
+/* ######## PROJECT ICON ######## */
 
 .icon-react {
 	color: rgb(0, 245, 212);

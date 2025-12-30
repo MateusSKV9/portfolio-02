@@ -1,13 +1,12 @@
 import styles from "./Academic.module.css";
-
 import { applyStyles } from "./../../utils/applyStyles";
 
 export function createAcademicCard(academic) {
 	const template = document.querySelector("#academic-card-template");
-
 	const card = template.content.cloneNode(true);
 
 	const position = academic.position === "right" ? "right" : "left";
+	const coursing = academic.status === "Cursando" ? "status" : "";
 
 	applyStyles(
 		card,
@@ -21,6 +20,7 @@ export function createAcademicCard(academic) {
 			".course": "course",
 			".description": "description",
 			".logo": "logo",
+			".status": coursing,
 		},
 		styles
 	);
@@ -30,6 +30,7 @@ export function createAcademicCard(academic) {
 	card.querySelector(".course").textContent = academic.course;
 	card.querySelector(".description").textContent = academic.description;
 	card.querySelector(".logo").setAttribute("src", academic.image);
+	card.querySelector(".status").textContent = academic.status;
 
 	return card;
 }

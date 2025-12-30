@@ -39,7 +39,7 @@ export function createProjectCard(project) {
 		const i = document.createElement("i");
 
 		const techClass = techList[technology];
-		if (techClass) i.classList.add(`project__icon`, `${techClass}`, `icon-${technology}`);
+		if (techClass) i.classList.add(`${techClass}`, `icon-${technology}`);
 
 		li.appendChild(i);
 		technologiesList.appendChild(li);

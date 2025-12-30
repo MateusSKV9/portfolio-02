@@ -4,7 +4,6 @@ export function renderProjects(projects) {
 	const container = document.querySelector(".project__container");
 
 	if (!container) return;
-
 	const fragment = document.createDocumentFragment();
 
 	projects.forEach((project) => {

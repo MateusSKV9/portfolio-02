@@ -1,5 +1,5 @@
 #header {
-	padding-top: 10px;
+	padding-top: 12px;
 	background-color: var(--background);
 	width: 100%;
 	max-width: 1200px;
@@ -15,7 +15,7 @@
 	display: flex;
 	justify-content: space-between;
 	border: 2px solid var(--white);
-	padding: 16px 32px;
+	padding: 12px 32px;
 	border-radius: 50px;
 	align-items: center;
 }
@@ -64,6 +64,7 @@
 	&:hover::before,
 	&:hover::after {
 		width: 50%;
+		height: 1px;
 	}
 }
 

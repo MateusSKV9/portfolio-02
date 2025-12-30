@@ -24,6 +24,7 @@
 	box-shadow: -8px 8px 0px var(--boxShadow-highlight);
 	border-radius: 10px;
 	background-color: var(--whitesmoke);
+	font-size: 1.05rem;
 
 	&::before {
 		content: "";
@@ -44,33 +45,49 @@
 
 .period {
 	font-style: italic;
-	font-weight: 500;
+	font-weight: 400;
 }
 
-/* #### LEFT #### */
+.status {
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 4px 8px;
+	position: absolute;
+	font-size: 1rem;
+	bottom: -16px;
+	right: 4px;
+	border-radius: 4px 0px 4px 0px;
+	box-shadow: 3px 3px 0px black;
+}
+
+/* ######## LEFT ######## */
 
 .left .card {
 	text-align: right;
 	right: calc(50% + 30px);
+	box-shadow: 8px 8px 0px var(--boxShadow-highlight);
 
 	&::before {
 		right: -45px;
 	}
 }
+
 .left .logo {
 	left: calc(50% + 30px);
 	box-shadow: -4px 4px 0px var(--boxShadow-highlight);
 }
+
 .left .header {
 	.instution {
 		order: 2;
 	}
 }
+
 .left .period {
 	order: 1;
 }
 
-/* #### RIGHT #### */
+/* ######## RIGHT ######## */
 
 .right .card {
 	text-align: left;
@@ -80,15 +97,18 @@
 		left: -45px;
 	}
 }
+
 .right .logo {
 	right: calc(50% + 30px);
 	box-shadow: 4px 4px 0px var(--boxShadow-highlight);
 }
+
 .right .header {
 	.instution {
 		order: 1;
 	}
 }
+
 .right .period {
 	order: 2;
 }
