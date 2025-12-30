@@ -6,6 +6,9 @@
 	box-shadow: 0px 3px 3px var(--boxShadow);
 	border: 1px solid var(--boxShadow);
 	transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+
 
 	&:hover {
 		transform: translateY(-4px);
@@ -29,6 +32,7 @@
 	justify-content: center;
 	padding: 20px;
 	font-size: 1rem;
+  height: 100%;
 }
 
 .content {
@@ -46,7 +50,10 @@
 
 .image {
 	width: 250px;
+	height: 250px;
+  aspect-ratio: 1 / 1;
 	border-radius: 8px;
+  object-fit: cover;
 }
 
 .technologies-list {
@@ -62,6 +69,7 @@
 	display: flex;
 	justify-content: start;
 	gap: 8px;
+  margin-top: auto;
 }
 
 .academic-link {
