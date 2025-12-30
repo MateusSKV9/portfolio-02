@@ -10,10 +10,19 @@
 		<link rel="stylesheet" href="src/styles/technologies.css" />
 		<link rel="stylesheet" href="src/styles/contact.css" />
 		<title>portfolio-02</title>
-
+		<script>
+			(function () {
+				const savedTheme = localStorage.getItem("theme") || "light";
+				document.documentElement.setAttribute("data-theme", savedTheme);
+			})();
+		</script>
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 	</head>
 	<body>
+		<div id="loading-screen" class="loading-screen">
+			<div class="loading-screen__spinner"></div>
+		</div>
+
 		<!-- ######## HEADER ######## -->
 
 		<header id="header" class="header">
