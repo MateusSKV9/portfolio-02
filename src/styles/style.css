@@ -89,7 +89,7 @@ main {
 	margin-top: 80px;
 	display: flex;
 	flex-direction: column;
-	gap: 140px;
+	gap: 100px;
 }
 
 section:not(#home) {
@@ -153,6 +153,7 @@ section:not(#home) {
 .project__container {
 	display: flex;
 	flex-wrap: wrap;
+  justify-content: center;
 	gap: 40px;
 }
 
@@ -185,6 +186,7 @@ section:not(#home) {
 
 .experience {
 	font-size: 1.2rem;
+  margin-top: -40px;
 }
 
 .experience__container {
@@ -232,24 +234,46 @@ section:not(#home) {
 	visibility: hidden;
 }
 
+
+
+
+@media screen and (min-width: 600px) and (max-width: 985px) {
+	html {
+		font-size: 12px;
+	}
+	.academic {
+		height: 1000px;
+	}
+	.academic__container {
+		gap: 00px;
+
+		&::before {
+			height: 900px;
+		}
+	}
+	main {
+		margin-top: 0;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	html {
 		font-size: 14px;
 	}
 
-  #home {
-    scroll-margin-top: 200px;
-  }
+	#home {
+		scroll-margin-top: 200px;
+	}
 
 	.academic {
 		height: auto;
-    gap: 80px !important;
+		gap: 80px !important;
 
 		.academic__container {
 			gap: 150px;
 			&::before {
 				height: calc(100% + 125px);
-        top: -110px;
+				top: -110px;
 			}
 		}
 	}

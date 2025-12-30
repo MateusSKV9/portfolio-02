@@ -28,6 +28,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	window.addEventListener("resize", () => {
+		const toggleMenu = document.querySelector(".toggle-menu");
+		if (window.innerWidth > 600) {
+			toggleMenu.classList.add("hidden");
+			nav.classList.remove("hidden");
+		} else {
+			toggleMenu.classList.remove("hidden");
+		}
+	});
+
+	const toggleMenu = document.querySelector(".toggle-menu");
+	if (window.innerWidth > 600) {
+		toggleMenu.classList.add("hidden");
+		nav.classList.remove("hidden");
+	} else {
+		toggleMenu.classList.remove("hidden");
+	}
+
 	// window.addEventListener("click", (e) => {
 	// 	// Verifica se o clique foi na nav ou em qualquer coisa DENTRO da nav
 	// 	const isClickInsideNav = e.target.closest(".header_nav");

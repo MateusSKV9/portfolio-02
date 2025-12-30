@@ -115,6 +115,26 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.content {
+		flex-direction: column-reverse;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+	.image {
+		width: 100%;
+		height: 200px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.card {
+		min-width: 380px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.card {
 		width: 100%;

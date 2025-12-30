@@ -132,6 +132,11 @@
 		transform: translateY(20px);
 	}
 }
+@media screen and (min-width: 600px) and (max-width: 985px) {
+  .home__image {
+    width: 260px;
+  }
+}
 
 @media screen and (max-width: 600px) {
 	.home {

@@ -10,6 +10,8 @@
 	align-items: center;
 	gap: 32px;
 	border: 2px solid var(--primary);
+
+  margin-top: 100px;
 }
 
 .contact__form {

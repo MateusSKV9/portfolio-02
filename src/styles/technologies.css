@@ -173,21 +173,34 @@
 	color: #1572b6;
 }
 
-@media screen and (max-width: 600px) {
-  
-	.technologies {
-		margin-top: 0px;
-    
-  }
-	.technologies__description {
-    width: 100%;
-    max-width: 100%;
-	}
-	.technologies__container {
-    flex-direction: column;
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+	body {
+		padding: 0px 30px;
 	}
 	.technologies__languages {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 120px));
+		justify-content: center;
+	}
+	.technologies__description {
+		width: 100%;
+		max-width: 100%;
+	}
+	.technologies__container {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 600px) {
+	.technologies {
+		margin-top: 0px;
+	}
+	.technologies__description {
+		width: 100%;
+		max-width: 100%;
+	}
+	.technologies__container {
+		flex-direction: column;
+	}
+	.technologies__languages {
+		grid-template-columns: repeat(auto-fill, minmax(100px, 120px));
 		justify-content: center;
 	}
 }
