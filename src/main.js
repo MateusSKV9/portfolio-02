@@ -15,4 +15,30 @@ document.addEventListener("DOMContentLoaded", () => {
 	initTheme();
 	initActiveMenuObserver();
 	initLoader();
+
+	const btn = document.querySelector(".toggle-menu");
+	const nav = document.querySelector(".header__nav");
+	const header = document.querySelector(".header");
+	btn.addEventListener("click", () => {
+		nav.classList.toggle("hidden");
+		if (!nav.classList.contains("hidden")) {
+			header.classList.remove("active");
+		} else {
+			header.classList.add("active");
+		}
+	});
+
+	// window.addEventListener("click", (e) => {
+	// 	// Verifica se o clique foi na nav ou em qualquer coisa DENTRO da nav
+	// 	const isClickInsideNav = e.target.closest(".header_nav");
+
+	// 	if (isClickInsideNav) {
+	// 		// Clique foi dentro da nav
+	// 		console.log("Clicou dentro!");
+	// 	} else {
+	// 		// Clique foi fora da nav (útil para fechar menus)
+	// 		nav.classList.add("hidden");
+	// 		header.classList.remove("active");
+	// 	}
+	// });
 });

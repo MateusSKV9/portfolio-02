@@ -63,6 +63,8 @@
 	display: flex;
 	gap: 24px;
 	font-size: 1.2rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .contact__link {
@@ -150,4 +152,19 @@
 .contact__rights {
 	font-weight: 500;
 	font-size: 0.95rem;
+}
+
+@media screen and (max-width: 600px) {
+	.contact {
+		padding: 20px 20px;
+		border-radius: 20px 20px 0 0;
+	}
+
+	.contact__icons {
+		font-size: 0.9rem;
+	}
+
+	.contact__wrapper {
+		flex-direction: column;
+	}
 }

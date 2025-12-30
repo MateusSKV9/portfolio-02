@@ -132,3 +132,36 @@
 		transform: translateY(20px);
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.home {
+		margin-top: 100px;
+		height: 100vh;
+	}
+	.home__title {
+		font-size: 2.5rem;
+	}
+	.home__subtitle {
+		font-size: 2rem;
+	}
+	.home__container {
+		flex-direction: column-reverse;
+		gap: 80px;
+	}
+	.home__content {
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
+	.home__icons {
+		justify-content: center;
+		margin-top: 40px;
+	}
+	.home__image {
+		width: 250px;
+	}
+
+	.home__image {
+		margin-left: 0px;
+	}
+}

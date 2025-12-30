@@ -57,7 +57,7 @@ html {
 
 	scrollbar-width: auto;
 	scrollbar-color: var(--primary) transparent;
-
+	padding: 0px 10px;
 	background-color: var(--background);
 }
 
@@ -230,4 +230,30 @@ section:not(#home) {
 .loading-screen--hidden {
 	opacity: 0;
 	visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 14px;
+	}
+
+  #home {
+    scroll-margin-top: 200px;
+  }
+
+	.academic {
+		height: auto;
+    gap: 80px !important;
+
+		.academic__container {
+			gap: 150px;
+			&::before {
+				height: calc(100% + 125px);
+        top: -110px;
+			}
+		}
+	}
+	.project__container {
+		flex-direction: column;
+	}
 }

@@ -6,9 +6,8 @@
 	box-shadow: 0px 3px 3px var(--boxShadow);
 	border: 1px solid var(--boxShadow);
 	transition: all 0.15s ease;
-  display: flex;
-  flex-direction: column;
-
+	display: flex;
+	flex-direction: column;
 
 	&:hover {
 		transform: translateY(-4px);
@@ -31,13 +30,15 @@
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	font-size: 1rem;
-  height: 100%;
+	font-size: 1.1rem;
+	height: 100%;
+	gap: 20px;
 }
 
 .content {
 	display: flex;
-	gap: 24px;
+	gap: 16px;
+	text-align: center;
 }
 
 .info {
@@ -51,9 +52,9 @@
 .image {
 	width: 250px;
 	height: 250px;
-  aspect-ratio: 1 / 1;
+	aspect-ratio: 1 / 1;
 	border-radius: 8px;
-  object-fit: cover;
+	object-fit: cover;
 }
 
 .technologies-list {
@@ -69,7 +70,7 @@
 	display: flex;
 	justify-content: start;
 	gap: 8px;
-  margin-top: auto;
+	margin-top: auto;
 }
 
 .academic-link {
@@ -111,5 +112,20 @@
 	20%,
 	80% {
 		transform: scale(1.05);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		width: 100%;
+	}
+	.content {
+		flex-direction: column-reverse;
+	}
+	.image {
+		width: 100%;
+	}
+	.container-links {
+		justify-content: center;
 	}
 }

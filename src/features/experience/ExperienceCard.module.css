@@ -14,7 +14,7 @@
 	background-color: var(--whitesmoke);
 	box-shadow: 0px 3px 3px var(--boxShadow);
 	transition: all 0.15s ease;
-	font-size: 1.1rem;
+	font-size: 1.05rem;
 
 	&:hover {
 		transform: translate(-2px, -4px);
@@ -40,11 +40,13 @@
 .wrapper {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 16px;
 }
 
 .company-image {
-	width: 110px;
+	width: 100%;
+	max-width: 90px;
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -76,7 +78,7 @@
 .responsabilities-list {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.1rem;
+	font-size: 1.05rem;
 	margin-left: 8px;
 	gap: 8px;
 }
@@ -96,10 +98,29 @@
 	align-items: center;
 	gap: 8px;
 	font-size: 1.1rem;
+	flex-wrap: wrap;
 }
 
 .technologies-item {
 	&:not(&:last-of-type)::after {
 		content: ",";
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		border-left: 4px solid var(--primary);
+	}
+	.header {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.compony-info {
+		min-width: 190px;
+	}
+	.container-period {
+		width: 100%;
+		flex-direction: row;
+		justify-content: flex-start;
 	}
 }

@@ -21,7 +21,8 @@ export const projects = [
 		deployLink: "#",
 		codeLink: "#",
 		technologies: ["javascript", "html", "css"],
-		description: "IT Solutions é aplicação que reflete a ideia e aparência de um site empresarial, com um design elegante, e com o layout dividido em seções como Parceiros, Produto, Galeria, Feedbacks etc.",
+		description:
+			"Landing page responsiva para um aplicativo de gerenciamento de clipboard, desenvolvida com foco em UI moderna, semântica HTML, layout flexível e destaque claro das funcionalidades de um app de clipboard multiplataforma.",
 	},
 	{
 		name: "Sunnyside Agency Landing Page",
@@ -29,7 +30,8 @@ export const projects = [
 		deployLink: "#",
 		codeLink: "#",
 		technologies: ["javascript", "html", "css"],
-		description: "IT Solutions é aplicação que reflete a ideia e aparência de um site empresarial, com um design elegante, e com o layout dividido em seções como Parceiros, Produto, Galeria, Feedbacks etc.",
+		description:
+			"Landing page frontend responsiva para uma agência criativa, desenvolvida com foco em layout moderno, tipografia marcante, seções bem estruturadas e adaptação para diferentes tamanhos de tela..",
 	},
 	{
 		name: "Lading Page Food Theme",
