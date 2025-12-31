@@ -1,6 +1,7 @@
 .group {
-	position: relative;
 	display: flex;
+
+	position: relative;
 	gap: 50px;
 	height: inherit;
 }
@@ -13,12 +14,13 @@
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+
 	position: absolute;
 	width: 100%;
 	max-width: 480px;
 	padding: 16px 24px;
-	display: flex;
-	flex-direction: column;
 	gap: 8px;
 	border: 2px solid var(--primary);
 	box-shadow: -8px 8px 0px var(--boxShadow-highlight);
@@ -77,10 +79,8 @@
 	box-shadow: -4px 4px 0px var(--boxShadow-highlight);
 }
 
-.left .header {
-	.instution {
-		order: 2;
-	}
+.left .instution {
+	order: 2;
 }
 
 .left .period {
@@ -103,17 +103,17 @@
 	box-shadow: 4px 4px 0px var(--boxShadow-highlight);
 }
 
-.right .header {
-	.instution {
-		order: 1;
-	}
+.right .instution {
+	order: 1;
 }
 
 .right .period {
 	order: 2;
 }
 
-@media screen and (min-width: 600px)  and (max-width: 985px) {
+/* ######## MEDIA QUERIES ######## */
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
 	.card {
 		max-width: 40vw;
 	}
@@ -131,8 +131,6 @@
 		position: static;
 		top: -130px;
 		left: 50%;
-		/* transform: translateX(-50%); */
-		/* order: -1; */
 		box-shadow: 0px 4px 0px black;
 	}
 
@@ -151,7 +149,6 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: max-content;
-
 		bottom: -16px;
 	}
 }
