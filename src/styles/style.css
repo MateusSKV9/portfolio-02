@@ -269,14 +269,16 @@ section:not(#home) {
 	}
 }
 
-@media screen and (max-width: 601px) {
-	html {
-		font-size: 14px;
-	}
-
+@media screen and (max-width: 768px) {
 	.section-title {
 		-webkit-text-stroke: 0;
 		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, -3px 3px 0 black;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	html {
+		font-size: 14px;
 	}
 
 	#home {
