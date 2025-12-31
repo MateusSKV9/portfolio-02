@@ -1,6 +1,8 @@
+<h1 align="center"> Portfólio Pessoal — Mateus Santos </h1>
+
 <img src="preview.png" alt="Preview">
 
-# 🚀 Portfólio Pessoal — Mateus Santos
+---
 
 Este projeto não é apenas um portfólio visual, mas um **estudo prático de arquitetura Front-end**, com foco em **escalabilidade, organização e boas práticas profissionais**.
 
