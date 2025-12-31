@@ -275,3 +275,7 @@ Mais do que mostrar design, ele mostra:
 - preocupação com manutenção
 - visão de longo prazo
 - domínio da base da web
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
