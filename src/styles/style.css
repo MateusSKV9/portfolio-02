@@ -133,12 +133,12 @@ section:not(#home) {
 .section-title {
 	color: var(--white);
 	text-shadow: -3px 3px 0px black;
+	-webkit-text-stroke: 1px black;
 	position: relative;
 	font-size: 2rem;
 	font-family: sans-serif;
 	font-weight: 900;
 	width: max-content;
-	-webkit-text-stroke: 1px black;
 	z-index: 1;
 
 	&::before {
@@ -269,9 +269,14 @@ section:not(#home) {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 601px) {
 	html {
 		font-size: 14px;
+	}
+
+	.section-title {
+		-webkit-text-stroke: 0;
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, -3px 3px 0 black;
 	}
 
 	#home {
