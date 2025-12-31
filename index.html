@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Portfólio de Mateus Santos, desenvolvedor web focado em interfaces modernas, acessíveis e funcionais."
+		/>
+		<meta property="og:title" content="Mateus Santos" />
+		<meta
+			property="og:description"
+			content="Portfólio de Mateus Santos, desenvolvedor web focado em interfaces modernas, acessíveis e funcionais."
+		/>
+		<meta
+			property="og:image"
+			content="https://mateus-santos-portfolio-02.vercel.app/assets/imaga-profile-D_c1Do3H.jpeg"
+		/>
+		<meta property="og:image:alt" content="Mateus Santos Logo" />
+		<meta property="og:url" content="https://mateus-santos-portfolio-02.vercel.app/" />
+		<meta property="og:type" content="website" />
 		<link rel="stylesheet" href="./src/styles/style.css" />
 		<link rel="stylesheet" href="src/styles/header.css" />
 		<link rel="stylesheet" href="src/styles/home.css" />
 		<link rel="stylesheet" href="src/styles/technologies.css" />
 		<link rel="stylesheet" href="src/styles/contact.css" />
-		<title>Mateus Santos - Portfolio-02</title>
+		<title>Mateus Santos | Desenvolvedor Web Frontend</title>
 		<script>
 			(function () {
 				const savedTheme = localStorage.getItem("theme") || "light";
@@ -95,7 +111,14 @@
 							</a>
 						</div>
 					</div>
-					<img class="home__image" src="src/assets/imaga-profile.jpeg" alt="Mateus Santos" />
+					<img
+						class="home__image"
+						src="src/assets/imaga-profile.jpeg"
+						alt="Mateus Santos"
+						decoding="async"
+						width="370"
+						fetchpriority="high"
+					/>
 				</div>
 
 				<div class="home__icons">
@@ -247,7 +270,12 @@
 					<i class="fa-brands fa-github contact__icon"></i>
 					<span>MateusSKV9</span>
 				</a>
-				<a class="contact__link" href="https://www.linkedin.com/in/mateus-santos-1a7361246/" target="_blank" rel="noopener noreferrer">
+				<a
+					class="contact__link"
+					href="https://www.linkedin.com/in/mateus-santos-1a7361246/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<i class="fa-brands fa-linkedin contact__icon"></i>
 					<span>Mateus Santos</span>
 				</a>
@@ -372,7 +400,7 @@
 			</article>
 		</template>
 
-		<script src="https://kit.fontawesome.com/0a1412cd70.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/0a1412cd70.js" crossorigin="anonymous" defer></script>
 
 		<script type="module" src="/src/main.js"></script>
 	</body>
