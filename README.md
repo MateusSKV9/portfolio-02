@@ -6,6 +6,8 @@ Este projeto não é apenas um portfólio visual, mas um **estudo prático de ar
 
 A ideia foi ir além de um site estático e construir uma base sólida, organizada e evolutiva — aplicando conceitos utilizados em projetos reais de mercado.
 
+📍**Disponível em:** https://gerenciador-estoque-angular.vercel.app/
+
 ---
 
 ## 🎯 Objetivos do Projeto
@@ -146,7 +148,7 @@ Além da componentização por _features_, o projeto conta com uma **camada de u
 
 Essas responsabilidades foram isoladas em `src/utils`, seguindo princípios como **separação de responsabilidades**, **baixo acoplamento** e **reutilização de código**.
 
-### 🔧 Utilitários implementados
+### Utilitários implementados:
 
 #### 🌀 Gerenciamento de Loader
 
@@ -234,16 +236,15 @@ src/
 │
 ├─ javascript.svg
 └─ main.js
-
 ```
 
 ---
 
-## 🧪 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
+- JavaScript (ES6+)
 - HTML5
 - CSS3
-- JavaScript (ES6+)
 - Vite
 - CSS Modules
 - BEM
