@@ -31,12 +31,15 @@ export function createProjectCard(project) {
 	card.querySelector(".name").textContent = project.name;
 	card.querySelector(".description").textContent = project.description;
 	card.querySelector(".image").setAttribute("src", project.image);
+  card.querySelector(".deploy-link").setAttribute("href", project.deployLink)
+  card.querySelector(".code-link").setAttribute("href", project.codeLink)
 
 	const technologiesList = card.querySelector(".technologies-list");
 
 	project.technologies.forEach((technology) => {
 		const li = document.createElement("li");
 		const i = document.createElement("i");
+		i.setAttribute("title", technology);
 
 		const techClass = techList[technology];
 		if (techClass) i.classList.add(`${techClass}`, `icon-${technology}`);

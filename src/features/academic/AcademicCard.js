@@ -30,6 +30,7 @@ export function createAcademicCard(academic) {
 	card.querySelector(".course").textContent = academic.course;
 	card.querySelector(".description").textContent = academic.description;
 	card.querySelector(".logo").setAttribute("src", academic.image);
+	card.querySelector(".logo").setAttribute("alt", `Logo ${academic.instution}`);
 	card.querySelector(".status").textContent = academic.status;
 
 	return card;

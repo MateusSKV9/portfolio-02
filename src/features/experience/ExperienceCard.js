@@ -26,6 +26,7 @@ export function createExperienceCard(experience) {
 	const card = template.content.cloneNode(true);
 
 	card.querySelector(".company-image").setAttribute("src", experience.image);
+	card.querySelector(".company-image").setAttribute("alt", `Logo ${experience.company}`);
 	card.querySelector(".company").textContent = experience.company;
 	card.querySelector(".role").textContent = experience.role;
 	card.querySelector(".description").textContent = experience.description;
