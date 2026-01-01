@@ -8,7 +8,7 @@ Este projeto não é apenas um portfólio visual, mas um **estudo prático de ar
 
 A ideia foi ir além de um site estático e construir uma base sólida, organizada e evolutiva — aplicando conceitos utilizados em projetos reais de mercado.
 
-📍**Disponível em:** https://gerenciador-estoque-angular.vercel.app/
+📍**Disponível em:** [portfólio](https://mateus-santos-portfolio-02.vercel.app/)
 
 ---
 
