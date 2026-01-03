@@ -1,6 +1,6 @@
-import ifbaImage from "./../../assets/images/academic/ifba-logo.jpeg";
+import ifbaImage from "./../../assets/images/academic/ifba-logo.webp";
 import uesbImage from "./../../assets/images/academic/uesb-logo.webp";
-import cepedimage from "./../../assets/images/academic/cepedi-logo.jpeg";
+import cepedimage from "./../../assets/images/academic/cepedi-logo.webp";
 
 export const academics = [
 	{

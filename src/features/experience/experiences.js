@@ -1,6 +1,6 @@
-import imageCepedi from "./../../assets/images/academic/cepedi-logo.jpeg";
+import imageCepedi from "./../../assets/images/academic/cepedi-logo.webp";
 import imageUesb from "./../../assets/images/academic/uesb-logo.webp";
-import imageCegesp from "./../../assets/images/experience/cegesp-logo.png";
+import imageCegesp from "./../../assets/images/experience/cegesp-logo.webp";
 
 export const experiences = [
 	{

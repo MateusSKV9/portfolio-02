@@ -1,9 +1,9 @@
-import gerenciadorImage from "./../../assets/images/projects/estoque.png";
-import clipboardLanding from "./../../assets/images/projects/clipboard-landing-page.jpg";
-import sunnysideAgency from "./../../assets/images/projects/sunnyside-agency-landing-page.jpg";
-import foodLanding from "./../../assets/images/projects/food-landing-page.jpg";
-import ticketGenerator from "./../../assets/images/projects/conference-ticket-generator.jpeg";
-import itSolutions from "./../../assets/images/projects/it-solutions.jpeg";
+import gerenciadorImage from "./../../assets/images/projects/estoque.webp";
+import clipboardLanding from "./../../assets/images/projects/clipboard-landing-page.webp";
+import sunnysideAgency from "./../../assets/images/projects/sunnyside-agency-landing-page.webp";
+import foodLanding from "./../../assets/images/projects/food-landing-page.webp";
+import ticketGenerator from "./../../assets/images/projects/conference-ticket-generator.webp";
+import itSolutions from "./../../assets/images/projects/it-solutions.webp";
 
 export const projects = [
 	{
