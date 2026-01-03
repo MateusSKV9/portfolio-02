@@ -1,5 +1,6 @@
 import styles from "./Project.module.css";
 import { applyStyles } from "./../../utils/applyStyles";
+import { techIcons } from "./icons";
 
 const stylesMap = {
 	".card": "card",
@@ -13,14 +14,11 @@ const stylesMap = {
 	".academic-link": "academic-link",
 };
 
-const techList = {
-	react: "devicon-react-original",
-	angular: "devicon-angularjs-plain",
-	typescript: "devicon-typescript-plain",
-	javascript: "devicon-javascript-plain",
-	html: "devicon-html5-plain",
-	css: "devicon-css3-plain",
-};
+function createSVG(svgString) {
+	const div = document.createElement("div");
+	div.innerHTML = svgString.trim();
+	return div.firstChild;
+}
 
 export function createProjectCard(project) {
 	const template = document.querySelector("#project-card-template");
@@ -31,21 +29,26 @@ export function createProjectCard(project) {
 	card.querySelector(".name").textContent = project.name;
 	card.querySelector(".description").textContent = project.description;
 	card.querySelector(".image").setAttribute("src", project.image);
-  card.querySelector(".deploy-link").setAttribute("href", project.deployLink)
-  card.querySelector(".code-link").setAttribute("href", project.codeLink)
+	card.querySelector(".deploy-link").setAttribute("href", project.deployLink);
+	card.querySelector(".code-link").setAttribute("href", project.codeLink);
 
 	const technologiesList = card.querySelector(".technologies-list");
 
 	project.technologies.forEach((technology) => {
-		const li = document.createElement("li");
-		const i = document.createElement("i");
-		i.setAttribute("title", technology);
+		const techKey = technology.toLowerCase();
+		const svgString = techIcons[techKey];
 
-		const techClass = techList[technology];
-		if (techClass) i.classList.add(`${techClass}`, `icon-${technology}`);
+		if (svgString) {
+			const li = document.createElement("li");
+			const svg = createSVG(svgString);
 
-		li.appendChild(i);
-		technologiesList.appendChild(li);
+			if (styles["icon"]) svg.classList.add(styles["icon"]);
+			svg.classList.add(`icon-${techKey}`);
+
+			li.setAttribute("title", technology);
+			li.appendChild(svg);
+			technologiesList.appendChild(li);
+		}
 	});
 
 	return card;
