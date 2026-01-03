@@ -24,6 +24,7 @@ export function createProjectCard(project) {
 	card.querySelector(".name").textContent = project.name;
 	card.querySelector(".description").textContent = project.description;
 	card.querySelector(".image").setAttribute("src", project.image);
+	card.querySelector(".image").setAttribute("alt", project.name);
 	card.querySelector(".deploy-link").setAttribute("href", project.deployLink);
 	card.querySelector(".code-link").setAttribute("href", project.codeLink);
 
