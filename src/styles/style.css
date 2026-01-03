@@ -168,6 +168,11 @@ section:not(#home) {
 	gap: 40px;
 }
 
+.project__icon {
+	width: 25px;
+	height: 25px;
+}
+
 .academic {
 	height: 950px;
 	gap: 80px;

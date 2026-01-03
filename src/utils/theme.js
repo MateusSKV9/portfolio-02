@@ -1,3 +1,6 @@
+import { iconTheme } from "../assets/icons/icons";
+import { createSVG } from "./generateSvg";
+
 export function applySavedTheme() {
 	const currentTheme = localStorage.getItem("theme") || "light";
 	document.documentElement.setAttribute("data-theme", currentTheme);
@@ -22,6 +25,8 @@ export function initTheme() {
 
 function updateIcon(btn, theme) {
 	const isDark = theme === "dark";
-	btn.classList.toggle("fa-moon", isDark);
-	btn.classList.toggle("fa-sun", !isDark);
+
+	btn.replaceChildren();
+	const svgThemeIcon = isDark ? createSVG(iconTheme["dark"]) : createSVG(iconTheme["light"]);
+	btn.appendChild(svgThemeIcon);
 }

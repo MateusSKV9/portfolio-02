@@ -1,6 +1,7 @@
 import styles from "./Project.module.css";
 import { applyStyles } from "./../../utils/applyStyles";
-import { techIcons } from "./icons";
+import { techIcons } from "../../assets/icons/icons";
+import { createSVG } from "../../utils/generateSvg";
 
 const stylesMap = {
 	".card": "card",
@@ -13,12 +14,6 @@ const stylesMap = {
 	".container-links": "container-links",
 	".academic-link": "academic-link",
 };
-
-function createSVG(svgString) {
-	const div = document.createElement("div");
-	div.innerHTML = svgString.trim();
-	return div.firstChild;
-}
 
 export function createProjectCard(project) {
 	const template = document.querySelector("#project-card-template");

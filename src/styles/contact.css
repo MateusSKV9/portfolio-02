@@ -89,6 +89,7 @@
 
 .contact__icon {
 	font-size: 1.4rem;
+	width: 29px;
 }
 
 .contact__button--secondary {
@@ -153,6 +154,7 @@
 
 .contact__icon--ckeck {
 	color: var(--primary);
+	width: 24px;
 }
 
 .contact__rights {
