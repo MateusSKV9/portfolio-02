@@ -2,10 +2,8 @@
 
 <img src="preview.png" alt="Preview">
 
----
-
+## ℹ️ Sobre
 Este projeto não é apenas um portfólio visual, mas um **estudo prático de arquitetura Front-end**, com foco em **escalabilidade, organização e boas práticas profissionais**.
-
 A ideia foi ir além de um site estático e construir uma base sólida, organizada e evolutiva — aplicando conceitos utilizados em projetos reais de mercado.
 
 📍**Disponível em:** [portfólio](https://mateus-santos-portfolio-02.vercel.app/)
