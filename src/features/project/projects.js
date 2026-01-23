@@ -5,6 +5,7 @@ import foodLanding from "./../../assets/images/projects/food-landing-page.webp";
 import ticketGenerator from "./../../assets/images/projects/conference-ticket-generator.webp";
 import itSolutions from "./../../assets/images/projects/it-solutions.webp";
 import catalogoProdutos from "./../../assets/images/projects/catalogo-produtos.webp";
+import gerenciadorEventos from "./../../assets/images/projects/gerenciador-eventos.webp";
 
 export const projects = [
 	{
@@ -15,6 +16,15 @@ export const projects = [
 		technologies: ["react", "html", "css"],
 		description:
 			"Catálogo de Produtos com gerenciamento completo de produtos e categorias. A aplicação permite criar, listar, editar e remover, além de filtrar produtos por nome e alternar entre tema claro e escuro. Os dados são sincronizados e persistidos via Mock API, simulando um cenário real de aplicação.",
+	},
+	{
+		name: "Gerenciador de Eventos",
+		image: gerenciadorEventos,
+		deployLink: "https://gerenciador-eventos-swart.vercel.app/",
+		codeLink: "https://github.com/MateusSKV9/gerenciador-eventos",
+		technologies: ["react", "html", "css"],
+		description:
+			"Gerenciador de eventos em React com arquitetura baseada em features, CRUD de eventos e categorias, hooks personalizados, Context API, diferentes formatos de exibição de eventos, ordenação dinâmica por prazo ou nome e visualização inteligente de tempo restante com barra de progresso por evento. Os dados estão sincronizados e persistentes no localStorage.",
 	},
 	{
 		name: "Gerenciador de Estoque",
@@ -61,13 +71,13 @@ export const projects = [
 	// 	description:
 	// 		"Gerador de ingresso para conferência. Inicialmente a página exibe um formulário para o usuário inserir seus dados, inclusive imagem. Uma vez preenchido todos os dados e submetidas, um ingresso é gerado exibindo as informações do usuário.",
 	// },
-	{
-		name: "IT Solutions",
-		image: itSolutions,
-		deployLink: "https://projects-js.vercel.app/001-it-solutions/",
-		codeLink: "https://github.com/MateusSKV9/projects/tree/main/001-it-solutions",
-		technologies: ["html", "css"],
-		description:
-			"IT Solutions é aplicação que reflete a ideia e aparência de um site empresarial, com um design elegante, e com o layout dividido em seções como Parceiros, Produto, Galeria, Feedbacks etc.",
-	},
+	// {
+	// 	name: "IT Solutions",
+	// 	image: itSolutions,
+	// 	deployLink: "https://projects-js.vercel.app/001-it-solutions/",
+	// 	codeLink: "https://github.com/MateusSKV9/projects/tree/main/001-it-solutions",
+	// 	technologies: ["html", "css"],
+	// 	description:
+	// 		"IT Solutions é aplicação que reflete a ideia e aparência de um site empresarial, com um design elegante, e com o layout dividido em seções como Parceiros, Produto, Galeria, Feedbacks etc.",
+	// },
 ];

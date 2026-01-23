@@ -57,6 +57,7 @@
 	aspect-ratio: 1 / 1;
 	border-radius: 8px;
 	object-fit: cover;
+	object-position: right;
 }
 
 .technologies-list {
