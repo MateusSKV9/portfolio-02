@@ -7,6 +7,7 @@ import itSolutions from "./../../assets/images/projects/it-solutions.webp";
 import catalogoProdutos from "./../../assets/images/projects/catalogo-produtos.webp";
 import gerenciadorEventos from "./../../assets/images/projects/gerenciador-eventos.webp";
 import gerenciadorLivros from "./../../assets/images/projects/gerenciador-livros.webp";
+import gerenciadorTarefas from "./../../assets/images/projects/gerenciador-tarefas.webp";
 
 export const projects = [
 	{
@@ -17,6 +18,15 @@ export const projects = [
 		technologies: ["react", "javascript", "html", "css"],
 		description:
 			"Catálogo de Produtos com gerenciamento completo de produtos e categorias. A aplicação permite criar, listar, editar e remover, além de filtrar produtos por nome e alternar entre tema claro e escuro. Os dados são sincronizados e persistidos via Mock API, simulando um cenário real de aplicação.",
+	},
+	{
+		name: "Gerenciador de Tarefas",
+		image: gerenciadorTarefas,
+		deployLink: "https://gerenciador-tarefas-khaki.vercel.app/",
+		codeLink: "https://github.com/MateusSKV9/gerenciador-tarefas",
+		technologies: ["next", "react", "typescript", "html", "css"],
+		description:
+			"Gerenciador de tarefas em Next.js 16 e TypeScript com arquitetura baseada em features, Server Actions para CRUD de tarefas e categorias, Optimistic UI para interações instantâneas, dashboard com gráficos dinâmicos (Recharts), validação robusta com Zod, feedback visual com Sonner e gerenciamento inteligente de cache e revalidação de dados.",
 	},
 	{
 		name: "Gerenciador de Livros",
@@ -72,15 +82,15 @@ export const projects = [
 		description:
 			"Página de restaurante minimalista e elegante com seção de cardápio, avaliações e contato. O site encontra-se totalmente responsivo e com animações suaves da biblioteca ScrollReveal.",
 	},
-	{
-		name: "Gerador de Ingressos",
-		image: ticketGenerator,
-		deployLink: "https://mateusskv9.github.io/frontend-mentor/023-conference-ticket-generator-main/",
-		codeLink: "https://github.com/MateusSKV9/frontend-mentor/tree/main/023-conference-ticket-generator-main",
-		technologies: ["javascript", "html", "css"],
-		description:
-			"Gerador de ingresso para conferência. Inicialmente a página exibe um formulário para o usuário inserir seus dados, inclusive imagem. Uma vez preenchido todos os dados e submetidas, um ingresso é gerado exibindo as informações do usuário.",
-	},
+	// {
+	// 	name: "Gerador de Ingressos",
+	// 	image: ticketGenerator,
+	// 	deployLink: "https://mateusskv9.github.io/frontend-mentor/023-conference-ticket-generator-main/",
+	// 	codeLink: "https://github.com/MateusSKV9/frontend-mentor/tree/main/023-conference-ticket-generator-main",
+	// 	technologies: ["javascript", "html", "css"],
+	// 	description:
+	// 		"Gerador de ingresso para conferência. Inicialmente a página exibe um formulário para o usuário inserir seus dados, inclusive imagem. Uma vez preenchido todos os dados e submetidas, um ingresso é gerado exibindo as informações do usuário.",
+	// },
 	// {
 	// 	name: "IT Solutions",
 	// 	image: itSolutions,
