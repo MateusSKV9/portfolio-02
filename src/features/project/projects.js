@@ -8,8 +8,18 @@ import catalogoProdutos from "./../../assets/images/projects/catalogo-produtos.w
 import gerenciadorEventos from "./../../assets/images/projects/gerenciador-eventos.webp";
 import gerenciadorLivros from "./../../assets/images/projects/gerenciador-livros.webp";
 import gerenciadorTarefas from "./../../assets/images/projects/gerenciador-tarefas.webp";
+import taskibit from "./../../assets/images/projects/taskibit.webp";
 
 export const projects = [
+	{
+		name: "Taskibit",
+		image: taskibit,
+		deployLink: "https://taskibit.vercel.app/",
+		codeLink: "https://github.com/MateusSKV9/taskibit-showcase",
+		technologies: ["next", "react", "typescript", "prisma", "supabase", "css"],
+		description:
+			"Plataforma Full Stack que centraliza tarefas, hábitos, metas e anotações em um só lugar. A aplicação conta com quadro Kanban interativo, visualização responsiva com navegação intuitiva, autenticação segura e dados sincronizados via Prisma ORM e Supabase. Desenvolvida para oferecer alta performance sem dependências externas pesadas.",
+	},
 	{
 		name: "Catálogo de Produtos",
 		image: catalogoProdutos,
@@ -73,15 +83,15 @@ export const projects = [
 		description:
 			"Landing page frontend responsiva para uma agência criativa, desenvolvida com foco em layout moderno, tipografia marcante, seções bem estruturadas e adaptação para diferentes tamanhos de tela..",
 	},
-	{
-		name: "Lading Page Food Theme",
-		image: foodLanding,
-		deployLink: "https://mateusskv9.github.io/landing-page-food-theme/",
-		codeLink: "https://github.com/MateusSKV9/landing-page-food-theme",
-		technologies: ["javascript", "html", "css"],
-		description:
-			"Página de restaurante minimalista e elegante com seção de cardápio, avaliações e contato. O site encontra-se totalmente responsivo e com animações suaves da biblioteca ScrollReveal.",
-	},
+	// {
+	// 	name: "Lading Page Food Theme",
+	// 	image: foodLanding,
+	// 	deployLink: "https://mateusskv9.github.io/landing-page-food-theme/",
+	// 	codeLink: "https://github.com/MateusSKV9/landing-page-food-theme",
+	// 	technologies: ["javascript", "html", "css"],
+	// 	description:
+	// 		"Página de restaurante minimalista e elegante com seção de cardápio, avaliações e contato. O site encontra-se totalmente responsivo e com animações suaves da biblioteca ScrollReveal.",
+	// },
 	// {
 	// 	name: "Gerador de Ingressos",
 	// 	image: ticketGenerator,
