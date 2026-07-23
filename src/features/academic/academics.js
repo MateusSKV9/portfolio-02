@@ -4,7 +4,7 @@ import cepedimage from "./../../assets/images/academic/cepedi-logo.webp";
 
 export const academics = [
 	{
-		instution: "IFBA",
+		institution: "IFBA",
 		period: "2019 - 2024",
 		course: "Técnico em Informática",
 		description:
@@ -14,7 +14,7 @@ export const academics = [
 		position: "right",
 	},
 	{
-		instution: "UESB",
+		institution: "UESB",
 		period: "2024 - 2027",
 		course: "Sistemas de Informação",
 		description:
@@ -24,7 +24,7 @@ export const academics = [
 		position: "left",
 	},
 	{
-		instution: "CEPEDI/Softex",
+		institution: "CEPEDI/Softex",
 		period: "2024",
 		course: "Desenvolvimento Front-End ",
 		description:

@@ -62,7 +62,7 @@
 	box-shadow: 3px 3px 0px black;
 }
 
-.instution {
+.institution {
 	font-size: 1.55rem;
 }
 
@@ -83,7 +83,7 @@
 	box-shadow: -4px 4px 0px var(--boxShadow-highlight);
 }
 
-.left .instution {
+.left .institution {
 	order: 2;
 }
 
@@ -107,7 +107,7 @@
 	box-shadow: 4px 4px 0px var(--boxShadow-highlight);
 }
 
-.right .instution {
+.right .institution {
 	order: 1;
 }
 

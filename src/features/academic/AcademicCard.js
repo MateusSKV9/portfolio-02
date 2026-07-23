@@ -15,7 +15,7 @@ export function createAcademicCard(academic) {
 			".logo": "logo",
 			".card": "card",
 			".header": "header",
-			".instution": "instution",
+			".institution": "institution",
 			".period": "period",
 			".course": "course",
 			".description": "description",
@@ -25,12 +25,12 @@ export function createAcademicCard(academic) {
 		styles
 	);
 
-	card.querySelector(".instution").textContent = academic.instution;
+	card.querySelector(".institution").textContent = academic.institution;
 	card.querySelector(".period").textContent = academic.period;
 	card.querySelector(".course").textContent = academic.course;
 	card.querySelector(".description").textContent = academic.description;
 	card.querySelector(".logo").setAttribute("src", academic.image);
-	card.querySelector(".logo").setAttribute("alt", `Logo ${academic.instution}`);
+	card.querySelector(".logo").setAttribute("alt", `Logo ${academic.institution}`);
 	card.querySelector(".status").textContent = academic.status;
 
 	return card;
