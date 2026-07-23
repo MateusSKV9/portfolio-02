@@ -11,9 +11,18 @@ export const experiences = [
 		role: "Desenvolvedor Frontend",
 		description: "Centro de Estudos em Gestão Pública - CEGESP/UESB",
 		responsabilities: [
-			"Atuei como desenvolvedor web em um projeto voltado à consulta de documentos do CEGESP.",
-			"Desenvolvi interfaces responsivas e sob medida.",
-			"Colaborei na construção do backend, utilizando JavaScript e SQLite para simulação de banco de dados.",
+			{
+				title: "Desenvolvimento Frontend",
+				text: "Implementei telas e componentes responsivos em JavaScript, HTML e CSS para o sistema de consulta de documentos do CEGESP, garantindo fidelidade ao layout e boa navegabilidade.",
+			},
+			{
+				title: "Apoio na Integração com Banco",
+				text: "Colaborei no desenvolvimento do backend em JavaScript, auxiliando no consumo e estruturação de dados com SQLite para as rotas de busca de documentos.",
+			},
+			{
+				title: "Trabalho em Equipe",
+				text: "Atuei em conjunto com mais dois desenvolvedores na divisão de tarefas, versionamento de código e alinhamento de requisitos do projeto.",
+			},
 		],
 		technologies: ["JavaScript", "HTML", "CSS", "SQLite"],
 	},
@@ -25,9 +34,18 @@ export const experiences = [
 		role: "Monitor de Programação",
 		description: "Linguagem de Programação I - Fundamentos",
 		responsabilities: [
-			"Apoiei alunos no entendimento de lógica de programação, funções, estruturas de repetição e ponteiros.",
-			"Auxiliei na resolução e depuração de exercícios práticos.",
-			"Reforcei conceitos fundamentais aplicáveis a outras linguagens, como JavaScript.",
+			{
+				title: "Suporte Técnico e Lógica",
+				text: "Orientei estudantes na resolução de problemas algorítmicos, cobrindo conceitos essenciais de C e C++ como ponteiros, alocação dinâmica de memória, funções e estruturas de controle.",
+			},
+			{
+				title: "Code Review e Debugging",
+				text: "Auxiliei na identificação e depuração de erros de compilação, memory leaks e lógica em projetos práticos, incentivando boas práticas de escrita de código.",
+			},
+			{
+				title: "Didática e Fundamentos",
+				text: "Conduzi sessões de dúvidas focadas em consolidar a base em algoritmos e raciocínio estruturado para os alunos da disciplina.",
+			},
 		],
 		technologies: ["C", "C++"],
 	},
@@ -39,9 +57,18 @@ export const experiences = [
 		role: "Designer UI/UX",
 		description: "Residência Tecnológica - 2ª Fase",
 		responsabilities: [
-			"Desenvolvi protótipos intuitivos para um aplicativo mobile voltado a maquininhas de pagamento (POS).",
-			"O projeto teve como objetivo auxiliar pessoas cegas e com baixa visão a realizarem pagamentos via cartão.",
-			"Desenvolvi o design com forte viés de acessibilidade, priorizando usabilidade, contraste e legibilidade.",
+			{
+				title: "Prototipagem de Alta Fidelidade",
+				text: "Desenvolvi protótipos e fluxos de navegação no Figma para um aplicativo mobile voltado a terminais e maquininhas de pagamento (POS).",
+			},
+			{
+				title: "Acessibilidade e Inclusão (WCAG)",
+				text: "Projetei interfaces focadas em usuários cegos ou com baixa visão, aplicando diretrizes de acessibilidade como alto contraste, tipografia de alta legibilidade e arquitetura adaptada para leitores de tela.",
+			},
+			{
+				title: "UX Research e Usabilidade",
+				text: "Validei fluxos de interação para garantir pagamentos via cartão mais autônomos, simples e intuitivos no contexto de dispositivos físicos.",
+			},
 		],
 		technologies: ["Figma", "Miro"],
 	},

@@ -6,7 +6,7 @@ const stylesMap = {
 	".header": "header",
 	".wrapper": "wrapper",
 	".company-image": "company-image",
-	".compony-info": "compony-info",
+	".company-info": "company-info",
 	".company": "company",
 	".role": "role",
 	".description": "description",
@@ -38,7 +38,12 @@ export function createExperienceCard(experience) {
 
 	experience.responsabilities.forEach((responsabilitie) => {
 		const li = document.createElement("li");
-		li.textContent = responsabilitie;
+		const strong = document.createElement("strong");
+
+		strong.textContent = `${responsabilitie.title}: `;
+
+		li.appendChild(strong);
+		li.appendChild(document.createTextNode(responsabilitie.text));
 
 		responsabilities.appendChild(li);
 	});
