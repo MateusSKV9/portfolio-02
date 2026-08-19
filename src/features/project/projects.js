@@ -25,7 +25,7 @@ export const projects = [
 		image: catalogoProdutos,
 		deployLink: "https://catalogo-produtos-react.vercel.app/",
 		codeLink: "https://github.com/MateusSKV9/catalogo-produtos",
-		technologies: ["react", "javascript", "html", "css"],
+		technologies: ["react", "typescript", "html", "css"],
 		description:
 			"Catálogo de Produtos com gerenciamento completo de produtos e categorias. A aplicação permite criar, listar, editar e remover, além de filtrar produtos por nome e alternar entre tema claro e escuro. Os dados são sincronizados e persistidos via Mock API, simulando um cenário real de aplicação.",
 	},
@@ -52,7 +52,7 @@ export const projects = [
 		image: gerenciadorEventos,
 		deployLink: "https://gerenciador-eventos-swart.vercel.app/",
 		codeLink: "https://github.com/MateusSKV9/gerenciador-eventos",
-		technologies: ["react", "javascript", "html", "css"],
+		technologies: ["react", "typescript", "html", "css"],
 		description:
 			"Gerenciador de eventos em React com arquitetura baseada em features, CRUD de eventos e categorias, hooks personalizados, Context API, diferentes formatos de exibição de eventos, ordenação dinâmica por prazo ou nome e visualização inteligente de tempo restante com barra de progresso por evento. Os dados estão sincronizados e persistentes no localStorage.",
 	},
