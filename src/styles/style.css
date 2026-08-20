@@ -268,7 +268,7 @@ section:not(#home) {
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (min-width: 600px) and (max-width: 1100px) {
+@media (min-width: 600px) and (max-width: 1100px) {
 	html {
 		font-size: 12px;
 	}
@@ -295,14 +295,14 @@ section:not(#home) {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.section-title {
 		-webkit-text-stroke: 0;
 		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, -3px 3px 0 black;
 	}
 }
 
-@media screen and (max-width: 601px) {
+@media (max-width: 601px) {
 	html {
 		font-size: 14px;
 	}

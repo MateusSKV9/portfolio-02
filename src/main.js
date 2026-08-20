@@ -25,4 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (copyrightYear) {
 		copyrightYear.textContent = `${new Date().getFullYear()}`;
 	}
+
+	if (typeof AOS !== "undefined") {
+		AOS.init();
+	}
 });

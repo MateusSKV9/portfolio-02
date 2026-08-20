@@ -197,7 +197,7 @@
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
 	body {
 		padding: 0px 30px;
 	}
@@ -216,7 +216,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.technologies {
 		margin-top: 0px;
 	}

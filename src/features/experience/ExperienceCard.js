@@ -13,39 +13,41 @@ const stylesMap = {
 	".container-period": "container-period",
 	".period": "period",
 	".duration": "duration",
-	".responsabilities-container": "responsabilities-container",
-	".responsabilities-title": "responsabilities-title",
-	".responsabilities-list": "responsabilities-list",
+	".responsibilities-container": "responsibilities-container",
+	".responsibilities-title": "responsibilities-title",
+	".responsibilities-list": "responsibilities-list",
 	".technologies-container": "technologies-container",
 	".technologies-list": "technologies-list",
 	".technologies-item": "technologies-item",
 };
-
 export function createExperienceCard(experience) {
 	const template = document.querySelector("#experience-card-template");
-	const card = template.content.cloneNode(true);
+	const cardFragment = template.content.cloneNode(true);
+	const cardElement = cardFragment.querySelector(".card");
 
-	card.querySelector(".company-image").setAttribute("src", experience.image);
-	card.querySelector(".company-image").setAttribute("alt", `Logo ${experience.company}`);
-	card.querySelector(".company").textContent = experience.company;
-	card.querySelector(".role").textContent = experience.role;
-	card.querySelector(".description").textContent = experience.description;
-	card.querySelector(".period").textContent = experience.period;
-	card.querySelector(".duration").textContent = experience.duration;
+	cardElement.setAttribute("data-aos", "fade-up");
 
-	const responsabilities = card.querySelector(".responsabilities-list");
-	const techList = card.querySelector(".technologies-list");
+	cardElement.querySelector(".company-image").setAttribute("src", experience.image);
+	cardElement.querySelector(".company-image").setAttribute("alt", `Logo ${experience.company}`);
+	cardElement.querySelector(".company").textContent = experience.company;
+	cardElement.querySelector(".role").textContent = experience.role;
+	cardElement.querySelector(".description").textContent = experience.description;
+	cardElement.querySelector(".period").textContent = experience.period;
+	cardElement.querySelector(".duration").textContent = experience.duration;
 
-	experience.responsabilities.forEach((responsabilitie) => {
+	const responsibilities = cardElement.querySelector(".responsibilities-list");
+	const techList = cardElement.querySelector(".technologies-list");
+
+	experience.responsibilities.forEach((responsibility) => {
 		const li = document.createElement("li");
 		const strong = document.createElement("strong");
 
-		strong.textContent = `${responsabilitie.title}: `;
+		strong.textContent = `${responsibility.title}: `;
 
 		li.appendChild(strong);
-		li.appendChild(document.createTextNode(responsabilitie.text));
+		li.appendChild(document.createTextNode(responsibility.text));
 
-		responsabilities.appendChild(li);
+		responsibilities.appendChild(li);
 	});
 
 	experience.technologies.forEach((tech) => {
@@ -55,7 +57,7 @@ export function createExperienceCard(experience) {
 		techList.appendChild(li);
 	});
 
-	applyStyles(card, stylesMap, styles);
+	applyStyles(cardFragment, stylesMap, styles);
 
-	return card;
+	return cardFragment;
 }

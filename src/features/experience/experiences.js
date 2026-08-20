@@ -10,7 +10,7 @@ export const experiences = [
 		image: imageCegesp,
 		role: "Desenvolvedor Frontend",
 		description: "Centro de Estudos em Gestão Pública - CEGESP/UESB",
-		responsabilities: [
+		responsibilities: [
 			{
 				title: "Desenvolvimento Frontend",
 				text: "Implementei telas e componentes responsivos em JavaScript, HTML e CSS para o sistema de consulta de documentos do CEGESP, garantindo fidelidade ao layout e boa navegabilidade.",
@@ -33,7 +33,7 @@ export const experiences = [
 		image: imageUesb,
 		role: "Monitor de Programação",
 		description: "Linguagem de Programação I - Fundamentos",
-		responsabilities: [
+		responsibilities: [
 			{
 				title: "Suporte Técnico e Lógica",
 				text: "Orientei estudantes na resolução de problemas algorítmicos, cobrindo conceitos essenciais de C e C++ como ponteiros, alocação dinâmica de memória, funções e estruturas de controle.",
@@ -56,7 +56,7 @@ export const experiences = [
 		image: imageCepedi,
 		role: "Designer UI/UX",
 		description: "Residência Tecnológica - 2ª Fase",
-		responsabilities: [
+		responsibilities: [
 			{
 				title: "Prototipagem de Alta Fidelidade",
 				text: "Desenvolvi protótipos e fluxos de navegação no Figma para um aplicativo mobile voltado a terminais e maquininhas de pagamento (POS).",

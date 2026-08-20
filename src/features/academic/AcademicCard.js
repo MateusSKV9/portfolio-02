@@ -3,13 +3,16 @@ import { applyStyles } from "./../../utils/applyStyles";
 
 export function createAcademicCard(academic) {
 	const template = document.querySelector("#academic-card-template");
-	const card = template.content.cloneNode(true);
+	const cardFragment = template.content.cloneNode(true);
+	const groupElement = cardFragment.querySelector(".group");
+
+	groupElement.setAttribute("data-aos", "zoom-in");
 
 	const position = academic.position === "right" ? "right" : "left";
 	const coursing = academic.status === "Cursando" ? "status" : "";
 
 	applyStyles(
-		card,
+		cardFragment,
 		{
 			".group": `group ${position}`,
 			".logo": "logo",
@@ -19,19 +22,18 @@ export function createAcademicCard(academic) {
 			".period": "period",
 			".course": "course",
 			".description": "description",
-			".logo": "logo",
 			".status": coursing,
 		},
 		styles
 	);
 
-	card.querySelector(".institution").textContent = academic.institution;
-	card.querySelector(".period").textContent = academic.period;
-	card.querySelector(".course").textContent = academic.course;
-	card.querySelector(".description").textContent = academic.description;
-	card.querySelector(".logo").setAttribute("src", academic.image);
-	card.querySelector(".logo").setAttribute("alt", `Logo ${academic.institution}`);
-	card.querySelector(".status").textContent = academic.status;
+	cardFragment.querySelector(".institution").textContent = academic.institution;
+	cardFragment.querySelector(".period").textContent = academic.period;
+	cardFragment.querySelector(".course").textContent = academic.course;
+	cardFragment.querySelector(".description").textContent = academic.description;
+	cardFragment.querySelector(".logo").setAttribute("src", academic.image);
+	cardFragment.querySelector(".logo").setAttribute("alt", `Logo ${academic.institution}`);
+	cardFragment.querySelector(".status").textContent = academic.status;
 
-	return card;
+	return cardFragment;
 }

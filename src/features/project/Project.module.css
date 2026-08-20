@@ -1,14 +1,20 @@
+.card-wrapper {
+	display: flex; 
+	max-width: calc(50% - 20px);
+	width: 100%;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 
 	background-color: var(--whitesmoke);
 	border-radius: 30px 0px 30px 0px;
 	overflow: hidden;
-	width: calc(50% - 20px);
 	box-shadow: 0px 3px 3px var(--boxShadow);
 	border: 1px solid var(--boxShadow);
-	transition: all 0.15s ease;
+	transition: transform 0.15s linear;
 
 	&:hover {
 		transform: translateY(-4px);
@@ -131,7 +137,7 @@
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.content {
 		flex-direction: column-reverse;
 		text-align: center;
@@ -151,15 +157,15 @@
 	}
 }
 
-@media screen and (min-width: 600px) {
-	.card {
+@media (min-width: 600px) {
+	.card-wrapper {
 		min-width: 380px;
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.card {
-		width: 100%;
+@media (max-width: 600px) {
+	.card-wrapper {
+		max-width: 100%;
 	}
 
 	.content {

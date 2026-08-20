@@ -11,4 +11,5 @@ export function renderExperiences(experiences) {
 	});
 
 	container.appendChild(fragment);
+	AOS.refresh();
 }

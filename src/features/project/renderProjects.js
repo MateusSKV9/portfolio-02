@@ -12,4 +12,5 @@ export function renderProjects(projects) {
 	});
 
 	container.appendChild(fragment);
+	AOS.refresh();
 }

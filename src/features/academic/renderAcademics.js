@@ -12,4 +12,5 @@ export function renderAcademics(academics) {
 	});
 
 	container.appendChild(fragment);
+	AOS.refresh();
 }

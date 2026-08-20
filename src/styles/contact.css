@@ -131,7 +131,7 @@
 		color: var(--white);
 
 		& .contact__input--primary,
-		& .contact__icon--ckeck {
+		& .contact__icon--check {
 			color: var(--white);
 		}
 	}
@@ -152,7 +152,7 @@
 	color: var(--primary);
 }
 
-.contact__icon--ckeck {
+.contact__icon--check {
 	color: var(--primary);
 	width: 24px;
 }
@@ -164,7 +164,7 @@
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.contact {
 		padding: 20px 20px;
 		border-radius: 20px 20px 0 0;

@@ -138,13 +138,13 @@
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
 	.home__image {
 		width: 260px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.home {
 		margin-top: 100px;
 		height: 100vh;

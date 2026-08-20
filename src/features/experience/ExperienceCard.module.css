@@ -14,18 +14,18 @@
 	gap: 30px;
 	background-color: var(--whitesmoke);
 	box-shadow: 0px 3px 3px var(--boxShadow);
-	transition: all 0.15s ease;
 	font-size: 1.05rem;
+	transition: transform 0.15s linear !important;
 
 	&:hover {
-		transform: translate(-2px, -4px);
+		transform: translate(-2px, -4px) !important;
 		border-top: 1px solid var(--primary);
 		border-right: 1px solid var(--primary);
 		border-bottom: 1px solid var(--primary);
 	}
 }
 
-.responsabilities-list,
+.responsibilities-list,
 .technologies-list {
 	list-style-position: inside;
 }
@@ -71,13 +71,13 @@
 	gap: 4px;
 }
 
-.responsabilities-container {
+.responsibilities-container {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
 }
 
-.responsabilities-list {
+.responsibilities-list {
 	display: flex;
 	flex-direction: column;
 	font-size: 1.05rem;
@@ -90,7 +90,7 @@
 	gap: 8px;
 }
 
-.responsabilities-title {
+.responsibilities-title {
 	font-weight: bold;
 }
 
@@ -111,7 +111,7 @@
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.card {
 		border-left: 4px solid var(--primary);
 	}

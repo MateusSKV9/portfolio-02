@@ -125,7 +125,7 @@ body > .header {
 
 /* ######## MEDIA QUERIES ######## */
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width: 1200px) {
 	body {
 		gap: 0px;
 	}
@@ -155,7 +155,7 @@ body > .header {
 	}
 }
 
-@media screen and (min-width: 601px) and (max-width: 765px) {
+@media (min-width: 601px) and (max-width: 765px) {
 	.header__wrapper {
 		justify-content: center;
 	}
@@ -165,7 +165,7 @@ body > .header {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	#header {
 		border-radius: 0px;
 		padding: 10px 0px 0px;
